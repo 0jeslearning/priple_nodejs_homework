@@ -101,7 +101,7 @@ handlers.notFound = (data, callback) => {
 
 // Hello handler
 handlers.hello = (data, callback) => {
-    callback(200, { 'message': 'Hello people, wasa' });
+    callback(200, { 'message': 'This is Pirple\'s Homework Assignment #1' });
 };
 
 // Define the request router
