@@ -16,8 +16,14 @@ const server = http.createServer(function(req, res) {
     const path = parsedUrl.pathname;
     const trimmedPath = path.replace(/^\/+|\/+$/g, '');
 
+    // Get the query string as an object
+    const queryStringObject = parsedUrl.query;
+
     // Get the HTTP Method
     const method = req.method.toLowerCase();
+
+    // Get the headers as an object
+    const headers = req.headers;
 
     // Send the response
     res.end('Hello World\n');
